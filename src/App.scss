@@ -1,0 +1,88 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 1s ease;
+  
+
+  form {
+   
+    margin-top:30px ; 
+
+    .suggestion{
+        border: 2px solid blueviolet;
+        border-top: none;
+        padding-left: 10px;
+        cursor: pointer;
+       
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.507);
+        }
+    }
+
+    .searchh {
+      width: 80vw;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        height: 90%;
+        border: 2px solid black;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        
+  
+
+        flex: 9;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        flex: 3;
+        height: 100%;
+        cursor: pointer;
+        background-color: crimson;
+        color: white;
+        font-weight: bold;
+        border: none;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+        cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      width: 300px;
+      height: 200px;
+
+      -webkit-box-shadow: 0px 20px 0px -10px #ffffff,
+        0px -20px 0px -10px #ffffff, 20px 0px 0px -10px #ffffff,
+        -20px 0px 0px -10px #ffffff, 0px 0px 0px 10px crimson,
+        3px 2px 11px 3px rgba(0, 0, 0, 0);
+      box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+        20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+        0px 0px 0px 10px crimson, 3px 2px 11px 3px rgba(0, 0, 0, 0);
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
